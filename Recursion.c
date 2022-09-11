@@ -43,3 +43,22 @@ printf("%c ".*p);
 printf(p+1);
 }
 }
+
+     //Reversed printing.
+  
+       #include<stdio.h>
+       void print(const char*);
+       void main()
+       {
+         char s[]="ABCD";
+         printf(s);
+         printf("\n");
+       }
+       void print(const char *p)
+       {
+         if(*p)
+         {
+           print(p+1);
+           printf("%c ",*p);
+         }
+       }
